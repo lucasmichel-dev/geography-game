@@ -1,0 +1,11 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "get-flag"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1tx2sj8fce02d"
+s3_prefix = "get-flag"
+region = "eu-central-1"
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
