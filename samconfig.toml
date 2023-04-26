@@ -9,3 +9,4 @@ region = "eu-central-1"
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
 image_repositories = []
+confirm_changeset = true

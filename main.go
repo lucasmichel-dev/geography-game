@@ -46,8 +46,10 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	headers := make(map[string]string)
+	headers["Access-Control-Allow-Origin"] = "*"
 	return events.APIGatewayProxyResponse{
+		Headers:    headers,
 		Body:       string(responseJson),
 		StatusCode: 200,
 	}, nil
