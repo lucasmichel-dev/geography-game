@@ -39,7 +39,7 @@ func HandleRequest(request events.APIGatewayProxyRequest) (events.APIGatewayProx
 	pick := keys[randomIndex]
 
 	responseBody := &ResponseBody{
-		FlagUrl: "https://flagcdn.com/w640/" + pick + ".jpg",
+		FlagUrl: "https://flagcdn.com/h240/" + pick + ".jpg",
 		Name:    result[pick],
 	}
 	responseJson, err := json.Marshal(responseBody)
